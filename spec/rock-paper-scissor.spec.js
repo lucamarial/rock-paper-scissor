@@ -13,4 +13,8 @@ describe('Rock-Paper-Scissor Game', () => {
         })
     })
 
+    it('should return tie', () => {
+        expect(RockPaperScissor('rock', 'rock')).to.eql('The result is a tie!')
+    })
+
 })

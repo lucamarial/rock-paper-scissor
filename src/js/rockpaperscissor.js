@@ -1,5 +1,7 @@
-function RockPaperScissor(choice1, choice2) {
-
+function RockPaperScissor(choiceOne, choiceTwo) {
+  if(choiceOne === choiceTwo){
+  return "The result is a tie!"
+  }
 };
 
 if (typeof module !== 'undefined' && module.exports) {
