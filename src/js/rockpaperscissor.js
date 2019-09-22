@@ -19,6 +19,15 @@ function RockPaperScissor(choiceOne, choiceTwo) {
       return "Scissor wins!"
     }
   };
+
+  if(choiceOne === 'scissor'){
+    if(choiceTwo === 'paper'){
+      return "Scissor wins!"
+    }
+    else{
+      return "Rock wins!"
+    }
+  }
 };
 
 if (typeof module !== 'undefined' && module.exports) {

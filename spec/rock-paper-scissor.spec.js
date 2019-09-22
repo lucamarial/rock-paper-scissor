@@ -33,4 +33,12 @@ describe('Rock-Paper-Scissor Game', () => {
         expect(RockPaperScissor('paper', 'scissor')).to.eql('Scissor wins!')
     })
 
+    it('should return scissor wins', () => {
+        expect(RockPaperScissor('scissor', 'paper')).to.eql('Scissor wins!')
+    })
+
+    it('should return rock wins', () => {
+        expect(RockPaperScissor('scissor', 'rock'))
+    })
+
 })
