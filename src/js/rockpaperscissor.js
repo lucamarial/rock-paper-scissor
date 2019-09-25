@@ -1,3 +1,9 @@
+function getComputerChoice() {
+  const choices = ['rock', 'paper', 'scissor'];
+  const randomNumber = Math.floor(Math.random() * 3);
+  return choices[randomNumber];
+}
+
 function RockPaperScissor(choiceOne, choiceTwo) {
   if(choiceOne === choiceTwo){
   return "The result is a tie!"
