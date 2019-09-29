@@ -1,37 +1,70 @@
-function getComputerChoice() {
+let result_div = document.querySelector(".result");
+const rock_button = document.getElementById("r");
+const paper_button = document.getElementById("p");
+const scissors_button = document.getElementById("s");
+
+
+function computerChoice() {
   const choices = ['rock', 'paper', 'scissor'];
   const randomNumber = Math.floor(Math.random() * 3);
   return choices[randomNumber];
 }
 
-function RockPaperScissor(choiceOne, choiceTwo) {
+const main = () => {
+  rock_button.addEventListener('click', function() {
+    RockPaperScissor("rock");
+  })
+
+  paper_button.addEventListener('click', function() {
+    RockPaperScissor("paper");
+  })
+
+  scissors_button.addEventListener('click', function() {
+    RockPaperScissor("scissor");
+  })
+}
+console.log(main())
+
+function win(user, computer) {
+  result_div.innerHTML = `${user} beats ${computer}. You win!`
+}
+
+function lose(user, computer) {
+  result_div.innerHTML = `${computer} beats ${user}. You lose!`
+}
+
+
+function RockPaperScissor(choiceOne) {
+  const choiceTwo = computerChoice();
+  
   if(choiceOne === choiceTwo){
-  return "The result is a tie!"
+  return result_div.innerHTML = "The result is a tie!"
   };
+  
   if(choiceOne === 'rock'){
     if(choiceTwo === 'scissor'){
-    return "Rock wins!"
+    return win(choiceOne, choiceTwo)
     }
     else{
-      return "Paper wins!"
+      return lose(choiceOne, choiceTwo)
     }
   };
 
   if(choiceOne === 'paper'){
     if(choiceTwo === 'rock'){
-      return "Paper wins!"
+      return win(choiceOne, choiceTwo)
     }
     else{
-      return "Scissor wins!"
+      return lose(choiceOne, choiceTwo)
     }
   };
 
   if(choiceOne === 'scissor'){
     if(choiceTwo === 'paper'){
-      return "Scissor wins!"
+      return win(choiceOne, choiceTwo)
     }
     else{
-      return "Rock wins!"
+      return lose(choiceOne, choiceTwo)
     }
   }
 };

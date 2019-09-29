@@ -19,7 +19,7 @@ context('User can make a choice between Rock, Paper or Scissor and gets the Game
 
   // Example test
   it('renders the Rock button', async () => {
-    let button = await browser.getContent("[class='Rock']")
+    let button = await browser.getContent("[Id='r']")
     expect(button).to.eql('Rock');
   });
 
