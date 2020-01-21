@@ -10,7 +10,7 @@
 6 silly lifecycle rock_paper_scissor@1.0.0~pretest: no script for pretest, continuing
 7 info lifecycle rock_paper_scissor@1.0.0~test: rock_paper_scissor@1.0.0
 8 verbose lifecycle rock_paper_scissor@1.0.0~test: unsafe-perm in lifecycle true
-9 verbose lifecycle rock_paper_scissor@1.0.0~test: PATH: /home/luca/.nvm/versions/node/v6.3.1/lib/node_modules/npm/bin/node-gyp-bin:/home/luca/rock_paper_scissor/node_modules/.bin:/home/luca/.nvm/versions/node/v6.3.1/bin:/home/luca/.nvm/versions/node/v6.3.1/bin:/usr/local/bin:/usr/local/sbin:/home/luca/.rvm/gems/ruby-2.3.4/bin:/home/luca/.rvm/gems/ruby-2.3.4@global/bin:/home/luca/.rvm/rubies/ruby-2.3.4/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luca/.rvm/bin:/home/luca/.rvm/bin
+9 verbose lifecycle rock_paper_scissor@1.0.0~test: PATH: /home/luca/.nvm/versions/node/v6.3.1/lib/node_modules/npm/bin/node-gyp-bin:/home/luca/rock_paper_scissor/node_modules/.bin:/home/luca/.nvm/versions/node/v6.3.1/bin:/home/luca/.rvm/gems/ruby-2.3.4/bin:/home/luca/.rvm/gems/ruby-2.3.4@global/bin:/home/luca/.rvm/rubies/ruby-2.3.4/bin:/home/luca/.nvm/versions/node/v6.3.1/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/luca/.rvm/bin
 10 verbose lifecycle rock_paper_scissor@1.0.0~test: CWD: /home/luca/rock_paper_scissor
 11 silly lifecycle rock_paper_scissor@1.0.0~test: Args: [ '-c', 'npm run features && npm run specs' ]
 12 silly lifecycle rock_paper_scissor@1.0.0~test: Returned: code: 1  signal: null
